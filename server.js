@@ -18,7 +18,7 @@ connectDB();
 const app = express();
 
 //middelwares
-app.use(cors());
+app.use(cors({origin:"https://e-commerce-frontend-xi-lovat.vercel.app"}));
 app.use(express.json());
 app.use(morgan("dev"));
 
